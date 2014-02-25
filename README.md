@@ -1,5 +1,6 @@
 deploy-play Cookbook
 ==============
+Chef Cookbook to deploy Play Framework Applications
 This cookbook deploys [playframework 2](http://www.playframework.com) Application
 
 
