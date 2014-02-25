@@ -17,10 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-chef_gem "rubyzip" do
-end
-require 'zip'
-require 'java::oracle'
+include_recipe 'zip'
 
 installation_dir="#{node[:play_app][:install_dir]}"
 
@@ -55,7 +52,7 @@ end
 template "#{config_dir}/application.conf" do
   source "application.conf.erb"
   variables({
-                :applicationSecretKey => "#{node[:play_app][:secret_key]}",
+                :applicationSecretKey => "#{node[:play_app][:application_secret_key]}",
                 :applicationLanguage => "#{node[:play_app][:language]}"
             })
 end
@@ -84,7 +81,7 @@ template "/etc/init.d/#{appName}" do
                 :name => "#{appName}",
                 :path => "#{installation_dir}/#{appName}",
                 :pidFilePath => "#{node[:play_app][:pid_file_path]}",
-                :options => "-Dconfig.file=#{config_dir}/application.conf -Dpidfile.path=#{node[:play_app][:pid_file_path]} -Dlogger.file=#{config_dir}/logger.xml #{node[play_app][vm_options]}",
+                :options => "-Dconfig.file=#{config_dir}/application.conf -Dpidfile.path=#{node[:play_app][:pid_file_path]} -Dlogger.file=#{config_dir}/logger.xml #{node[:play_app][:vm_options]}",
                 :command => "start"
             })
 end
