@@ -18,6 +18,7 @@
 # limitations under the License.
 
 include_recipe 'zip'
+include_recipe 'java::oracle'
 
 installation_dir="#{node[:play_app][:install_dir]}"
 
