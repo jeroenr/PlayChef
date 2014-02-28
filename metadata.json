@@ -1,0 +1,38 @@
+{
+  "name": "deploy-play",
+  "description": "Deploys Play Framework Applications",
+  "long_description": "",
+  "maintainer": "Blue Pi Consulting pvt ltd",
+  "maintainer_email": "sameera@bluepi.in",
+  "license": "Apache 2.0",
+  "platforms": {
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0",
+    "linuxmint": ">= 0.0.0",
+    "redhat": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "amazon": ">= 0.0.0",
+    "fedora": ">= 0.0.0"
+  },
+  "dependencies": {
+    "java": ">= 1.6"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "default": "Deploys Play App"
+  },
+  "version": "0.1.0"
+}
