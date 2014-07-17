@@ -1,9 +1,9 @@
 {
-  "name": "deploy-play",
+  "name": "deplay",
   "description": "Deploys Play Framework Applications",
   "long_description": "",
-  "maintainer": "Blue Pi Consulting pvt ltd",
-  "maintainer_email": "sameera@bluepi.in",
+  "maintainer": "Jeroen Rosenberg",
+  "maintainer_email": "jeroen.rosenberg@gmail.com",
   "license": "Apache 2.0",
   "platforms": {
     "ubuntu": ">= 0.0.0",

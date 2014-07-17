@@ -1,19 +1,19 @@
-deploy-play Cookbook
+deplay Cookbook
 ==============
 Chef Cookbook to deploy Play Framework Applications
 This cookbook deploys [playframework 2](http://www.playframework.com) Application
 
-For usage please follow 
-
-http://bluepi.in/blogs/2014/03/01/automating-play-applications-deployment-using-chef/
+Usage
+-------------------
+TODO
 
 
 
 License and Authors
 -------------------
-Author:: Sameer Arora (<sameera@bluepi.in>)
+Author:: Jeroen Rosenberg (<jeroen.rosenberg@gmail.com>)
 
-Copyright 2014, BluePi
+Copyright 2014, Jeroen Rosenberg
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

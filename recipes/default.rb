@@ -42,7 +42,7 @@ bash "unzip-#{appName}" do
   code <<-EOH
     sudo rm -rf #{installation_dir}/#{appName}
     sudo unzip #{installation_dir}/#{appName}.zip
-    sudo chmod +x #{installation_dir}/#{appName}/start
+    sudo chmod +x #{installation_dir}/#{appName}/bin/#{appName}
     sudo rm #{installation_dir}/#{appName}.zip
   EOH
 end
